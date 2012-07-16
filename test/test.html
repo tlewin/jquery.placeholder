@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css" media="screen">
+      html, body {
+        margin: 0px;
+        font-family: 'Arial', 'Sans-Serif';
+        font-size: 16px;
+        background: #eeeeee;
+      }
+      
+      h1, h2 {
+        margin: 0px 0px 35px;
+        font-weight: normal;
+      }
+      
+      label {
+        
+      }
+      
+      input {
+        width: 250px;
+        margin: 0px;
+        padding: 3px 5px;
+        border: 1px solid #aaaaaa;
+        outline: none;
+      }
+      
+      .jq-ph {
+        color: #aaaacc;
+      }
+
+      .container {
+        width: 940px;
+        margin: 0px auto;
+        padding: 10px;
+        background: #ffffff;
+      }
+      
+      .scenario {
+        margin: 20px 0px;
+        padding: 20px;
+        border: 1px solid #b7b73d;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <title>JQuery | Placeholder</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Different scenarios for placeholder plugin</h1>
+      <div class="scenario">
+        <h2>Test inputs with data-ph attribute.</h2>
+        <label for="test01">Test 01</label>
+        <input type="text" data-ph="test 01" name="test01"/>
+        <label for="test02">Test 02</label>
+        <input type="text" data-ph="test 02" name="test02"/>
+      </div>
+      <div class="scenario">
+        <h2>Test inputs with no data-ph element</h2>
+        <label for="test101">Test 101</label>
+        <input id="test101" type="text" name="test101"/>
+      </div>
+    </div>
+    <script src="../jquery.placeholder.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+        $().placeholder();
+        $('#test101').placeholder({phText: 'Test 101 :-P'});
+      });
+    </script>
+  </body>
+</html>

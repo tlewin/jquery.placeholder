@@ -1,0 +1,28 @@
+{
+  "name": "jQuery Placeholder",
+  "version": "0.1.0-beta",
+  "title": "$().placeholder()",
+  "description": "Creates a CSS customizable placeholder for input elements for browsers that doesn't implement CSS customizable placeholder attribute.",
+  "author": "Thiago Lewin",
+  "url": "twitter.com/thiagolewin",
+  "author": {
+    "name": "Thiago Lewin",
+    "twitter": "http://twitter.com/thiagolewin",
+    "url": "https://github.com/tlewin"
+  },
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "https://github.com/tlewin/jquery.placeholder/GPL-LICENSE.txt"
+    },
+    {
+      "type": "MIT",
+      "url": "https://github.com/tlewin/jquery.placeholder/MIT-LICENSE.txt"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.6"
+  },
+  "keywords": ["placeholder", "html5", "customizable"],
+  "homepage": "https://github.com/tlewin/jquery.placeholder"
+}
