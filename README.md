@@ -32,4 +32,4 @@ The label element created by plugin has the class jq-ph that can be customized b
 Licenses:
 =========
 
-jQuery Placeholder - Plugin is released under [GPL](https://github.com/tlewin/jquery.placeholder/GPL-LICENSE.txt) and [MIT](https://github.com/tlewin/jquery.placeholder/MIT-LICENSE.txt) licenses, same as jQuery software.
+jQuery Placeholder - Plugin is released under [GPL](https://github.com/tlewin/jquery.placeholder/raw/v0.1.0/GPL-LICENSE.txt) and [MIT](https://github.com/tlewin/jquery.placeholder/raw/v0.1.0/MIT-LICENSE.txt) licenses, same as jQuery software.
