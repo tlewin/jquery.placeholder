@@ -24,7 +24,7 @@ The label element created by plugin has the class jq-ph that can be customized b
 #Examples:
 
     // Create placeholder for any input element with data-ph attribute.
-    $.placeholder() // Same as $('[data-pl]').placeholder()
+    $().placeholder() // Same as $('[data-ph]').placeholder()
   
     // Insert a custom placeholder text into a specific element.
     $('#my-input').placeholder({phText: 'Some text'}) 
