@@ -15,10 +15,6 @@
         font-weight: normal;
       }
       
-      label {
-        
-      }
-      
       input {
         width: 250px;
         margin: 0px;
@@ -33,15 +29,21 @@
 
       .container {
         width: 940px;
-        margin: 0px auto;
-        padding: 10px;
+        margin: 10px auto;
+        padding: 30px;
         background: #ffffff;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;        
       }
       
       .scenario {
         margin: 20px 0px;
         padding: 20px;
         border: 1px solid #b7b73d;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;        
       }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -53,21 +55,33 @@
       <div class="scenario">
         <h2>Test inputs with data-ph attribute.</h2>
         <label for="test01">Test 01</label>
-        <input type="text" data-ph="test 01" name="test01"/>
+        <input id="test02" type="text" data-ph="test 01" name="test01"/>
         <label for="test02">Test 02</label>
-        <input type="text" data-ph="test 02" name="test02"/>
+        <input id="test01" type="text" data-ph="test 02" name="test02"/>
       </div>
       <div class="scenario">
         <h2>Test inputs with no data-ph element</h2>
         <label for="test101">Test 101</label>
         <input id="test101" type="text" name="test101"/>
       </div>
+      <div class="scenario">
+        <h2>Test inputs with different attribute element</h2>
+        <label for="test201">Test 101</label>
+        <input id="test201" dt-ph='test 201' type="text" name="test201"/>
+      </div>
+      <div class="scenario">
+        <h2>Force native placeholder check</h2>
+        <label for="test301">Test 101</label>
+        <input id="test301" type="text" name="test301"/>
+      </div>
     </div>
     <script src="../jquery.placeholder.js"></script>
     <script type="text/javascript" charset="utf-8">
       $(function() {
         $().placeholder();
-        $('#test101').placeholder({phText: 'Test 101 :-P'});
+        $('#test101').placeholder({phText: 'Test 101'});
+        $().placeholder({attrData: 'dt-ph'});
+        $('#test301').placeholder({phText: 'Test 301', checkNative: true});
       });
     </script>
   </body>
