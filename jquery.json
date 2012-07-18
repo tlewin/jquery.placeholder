@@ -1,6 +1,6 @@
 {
   "name": "jQuery Placeholder",
-  "version": "0.1.0-beta",
+  "version": "v0.2.0",
   "title": "$().placeholder()",
   "description": "Creates a CSS customizable placeholder for input elements for browsers that doesn't implement CSS customizable placeholder attribute.",
   "author": "Thiago Lewin",
