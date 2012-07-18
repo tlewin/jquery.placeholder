@@ -19,10 +19,10 @@ The label element created by plugin has the class jq-ph that can be customized b
 
 ## Parameters
 
-**checkNative**: Check if browser has native support for placeholder. Actually, it doesn't check for CSS support (It will be included on next realease). _false_ by default.
-**phText**: Placeholder text. If empty/ null/ undefined the plugin will search for _data-ph_ attribute. _null_ by default.
-**className**: The element class name for CSS customization. The default class name is _jq-ph_.
-**attrData**: Element attribute where placeholder text is stored. The default value is _data-ph_.
+* **checkNative**: Check if browser has native support for placeholder. Actually, it doesn't check for CSS support (It will be included on next realease). _false_ by default.
+* **phText**: Placeholder text. If empty/ null/ undefined the plugin will search for _data-ph_ attribute. _null_ by default.
+* **className**: The element class name for CSS customization. The default class name is _jq-ph_.
+* **attrData**: Element attribute where placeholder text is stored. The default value is _data-ph_.
 
 ## Examples:
 
