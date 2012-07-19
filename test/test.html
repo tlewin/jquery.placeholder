@@ -26,6 +26,11 @@
       .jq-ph {
         color: #aaaacc;
       }
+      
+      .test-jq-ph {
+        color: #ff3333;
+        font-weight: bold !important;
+      }
 
       .container {
         width: 940px;
@@ -74,6 +79,11 @@
         <label for="test301">Test 101</label>
         <input id="test301" type="text" name="test301"/>
       </div>
+      <div class="scenario">
+        <h2>Custom placeholder class</h2>
+        <label for="test401">Test 101</label>
+        <input id="test401" type="text" name="test401"/>
+      </div>
     </div>
     <script src="../jquery.placeholder.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -82,6 +92,7 @@
         $('#test101').placeholder({phText: 'Test 101'});
         $().placeholder({attrData: 'dt-ph'});
         $('#test301').placeholder({phText: 'Test 301', checkNative: true});
+        $('#test401').placeholder({phText: 'Test 401', className: 'test-jq-ph'});
       });
     </script>
   </body>
